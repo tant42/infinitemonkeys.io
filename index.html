@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Infinite Monkeys</title>
+    <style>
+    body {
+      background-image: url('http://www.infinitemonkeys.io.s3.amazonaws.com/monkey.gif');
+    }
+    .fb-like{
+      background-color: rgba(255,255,255,0.5);
+      padding-top: 4px;
+      padding-left: 4px;
+      position: fixed !important;
+      bottom: 0;
+      border-radius:6px;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- http://en.wikipedia.org/wiki/Infinite_monkey_theorem -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-like" data-href="http://www.infinitemonkeys.io" data-layout="standard" data-action="like" data-show-faces="true" data-share="false" data-colorscheme="light"></div>
+  </body>
+</html>
