@@ -1,40 +1,16 @@
 <html>
   <head>
     <title>Infinite Monkeys</title>
-    <style>
-    body {
-      background-image: url('http://www.infinitemonkeys.io.s3.amazonaws.com/monkey.gif');
-      -webkit-animation: scroll 2.5s infinite linear;
-      animation: scroll 2.5s infinite linear;
-    }
-    .fb-like{
-      background-color: rgba(255,255,255,0.5);
-      padding: 4px;
-      position: fixed !important;
-      border-radius:6px;
-      top: 4px;
-      left: 4px;
-    }
-    @-webkit-keyframes scroll {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 320px 0;
-      }
-    }
-    @keyframes scroll {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 320px 0;
-      }
-    }
-    </style>
+    <link href="./css/style.css" type="text/css" rel="stylesheet"></link>
+    <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
   </head>
   <body>
     <!-- http://en.wikipedia.org/wiki/Infinite_monkey_theorem -->
+    <div id="messagesDiv"></div>
+    <div id="input">
+      <input type='text' id='letterInput' placeholder='A character?!' minlength='1' maxlength='1'>
+    </div>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -53,5 +29,6 @@
       ga('create', 'UA-35485534-3', 'auto');
       ga('send', 'pageview');
     </script>
+    <script type="text/javascript" src="js/firebased.js"></script>
   </body>
 </html>
