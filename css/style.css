@@ -1,0 +1,45 @@
+body {
+  /*background-image: url('http://www.infinitemonkeys.io.s3.amazonaws.com/monkey.gif');*/
+  -webkit-animation: scroll 2.5s infinite linear;
+  animation: scroll 2.5s infinite linear;
+}
+.fb-like{
+  background-color: rgba(255,255,255,0.5);
+  padding: 4px;
+  position: fixed !important;
+  border-radius:6px;
+  top: 4px;
+  left: 4px;
+}
+
+/* Animation for the background START */
+
+@-webkit-keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 320px 0;
+  }
+}
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 320px 0;
+  }
+}
+
+/* END */
+
+/* Style the inputted letters from the contributors START */
+
+#messagesDiv {
+  color: lightgray;
+  font-family: sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+/* END */
