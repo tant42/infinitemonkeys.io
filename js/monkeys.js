@@ -3,11 +3,12 @@
 
 $('form').submit(function(e){
   $('#letterInput').attr('disabled', true);
+  $('#letterInput').css('border', '3px solid tomato');
   window.setTimeout(reenable, 5000);
   e.preventDefault();
 })
 
 var reenable = function(){
   $('#letterInput').attr('disabled', false);
-  // $('#letterInput').css('border', '3px solid lime');
+  $('#letterInput').css('border', '3px solid lime');
 };
